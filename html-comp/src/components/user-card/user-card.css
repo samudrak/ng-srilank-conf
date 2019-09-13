@@ -1,0 +1,9 @@
+.card__user-card-container {
+    display: inline-block;
+  }
+
+  .card__details-btn {
+    background-color: #dedede;
+    padding: 6px;
+    margin-bottom: 8px;
+  }

@@ -1,0 +1,15 @@
+
+<template id="user-card-template">
+    <link rel="stylesheet" type="text/css" href="src/components/user-card/user-card.css">
+    <div class="card__user-card-container">
+        <h2 class="card__name">
+          <span class="card__full-name"></span> (
+          <span class="card__user-name"></span>)
+        </h2>
+        <p>Website: <a class="card__website"></a></p>
+        <div>
+          <p class="card__address"></p>
+        </div>
+    </div>
+    </template>
+<script src="<%= htmlWebpackPlugin.files.chunks['components/user-card'].entry %>"></script>

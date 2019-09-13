@@ -1,0 +1,18 @@
+.people-list__container {
+  border: 1px solid black;
+}
+
+.people-list__list {
+  list-style: none
+}
+
+.people-list__name {
+  cursor: pointer;
+}
+
+.people-list__list>li {
+  font-size: 20px;
+  font-family: Helvetica;
+  color: #000000;
+  text-decoration: none;
+}
