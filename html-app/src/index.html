@@ -110,16 +110,30 @@
     <!--
         *********************************************************
         Runing multipe technologies side by sid
+    -->
 
-    -->
-     
-    <!-- angular boot straped inside web comp
-        <angular-comp></angular-comp>
-    -->
+
+    <div class="row">
+        <div class="column" style="background-color:#aaa;">
+        <!-- angular boot straped inside web comp
+
+            <angular-comp></angular-comp> 
     
-    <!-- react boot straped inside web comp
-        <react-comp></react-comp>
-    -->
+        -->
+        </div>
+        <div class="column" style="background-color:#bbb;">
+            <!-- react boot straped inside web comp
+
+            <react-comp></react-comp>
+    
+            -->
+        </div>
+    </div>
+ 
+
+     
+    
+    
     
 
     <script type="text/javascript" src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
@@ -127,26 +141,23 @@
 
       <!--
         <script type="text/javascript" src="<%= htmlWebpackPlugin.files.chunks['components/sample-comp'].entry %>"></script>
-  
     -->
 
-   <!--
+   
+    <!--  
         <script type="text/javascript" src="<%= htmlWebpackPlugin.files.chunks['components/user-list'].entry %>"></script>
-     
-    -->
-    
-    <!--
         <script type="text/javascript" src="<%= htmlWebpackPlugin.files.chunks['components/user-card'].entry %>"></script>
     
     -->
     
 
-    <!-- 
+<!--     
     <script type="text/javascript" src="<%= htmlWebpackPlugin.files.chunks['components/angular-comp'].entry %>"></script>
-     -->
-    <!--
-        <script type="text/javascript" src="<%= htmlWebpackPlugin.files.chunks['components/react-comp'].entry %>"></script>
-    -->
+
+-->
+<!--
+    <script type="text/javascript" src="<%= htmlWebpackPlugin.files.chunks['components/react-comp'].entry %>"></script>
+-->
     
 </body>
 </html>
