@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .column {
+        float: left;
+        width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+    </style>
+<head>
+        <!--
+            Pillers of Web Components 
+            1. element
+            2. Templates
+            3. Html Imports 
+            4. Shadow Dom 
+        -->
+        
+        <!--
+            pollyfills needed to support custom elements
+            1. import '@webcomponents/webcomponentsjs/custom-elements-es5-adapter';
+            2. import '@webcomponents/custom-elements';
+        -->
+
+        <script type="text/javascript" src="<%= htmlWebpackPlugin.files.chunks.polyfills.entry %>"></script>
+
+        <!--
+            Show html Imports functionality
+        -->
+     
+          <!--
+        <link rel="import" href="./components/sample-comp.html">      
+      
+        <link rel="import" href="./components/angular-comp.html">
+        --> 
+            
+</head>
+<body>
+    <div id="app">
+            
+    </div>
+    
+    
+    <!--
+        *********************************************************
+        Basic introduction to web compornets 
+
+    -->
+    <!-- custom elements 
+     Use sample component to demo life cycle . Life cycle hooks of a custom element 
+     1- connectedCallback
+     2. disconnectedCallback
+     3. attributeChangedCallback
+     4. adoptedCallback
+     5. observedAttributes
+    -->
+    
+    <!--
+    <div>
+        <button class="add">Add custom-square to DOM</button>
+        <button class="update">Update attributes</button>
+        <button class="remove">Remove custom-square from DOM</button>
+        <sample-comp></sample-comp>
+    </div>
+    -->
+
+
+    <!--
+        *********************************************************
+        Example using vanila Java Scrip
+    -->
+
+    <!--
+    application as a collection of micro features    
+    1. layout 
+    2. features (list - detail view )
+    -->
+
+    <!--
+         <div class="row">
+            <div class="column" style="background-color:#aaa;">
+                <h2>Column 1</h2>
+                <p>Some text..</p>
+            </div>
+            <div class="column" style="background-color:#bbb;">
+                <h2>Column 2</h2>
+                <p>Some text..</p>
+            </div>
+        </div>
+     -->
+     
+   <!--
+        <div class="row">
+            <div class="column" style="background-color:#aaa;">
+                <user-list></user-list>
+            </div>
+            <div class="column" style="background-color:#bbb;">
+                <user-card user-id="1"></user-card>
+            </div>
+        </div>
+     
+    -->
+     
+    <!--
+        *********************************************************
+        Runing multipe technologies side by sid
+
+    -->
+     
+    <!-- angular boot straped inside web comp
+        <angular-comp></angular-comp>
+    -->
+    
+    <!-- react boot straped inside web comp
+        <react-comp></react-comp>
+    -->
+    
+
+    <script type="text/javascript" src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+    <script type="text/javascript" src="<%= htmlWebpackPlugin.files.chunks.loader.entry %>"></script>
+
+      <!--
+        <script type="text/javascript" src="<%= htmlWebpackPlugin.files.chunks['components/sample-comp'].entry %>"></script>
+  
+    -->
+
+   <!--
+        <script type="text/javascript" src="<%= htmlWebpackPlugin.files.chunks['components/user-list'].entry %>"></script>
+     
+    -->
+    
+    <!--
+        <script type="text/javascript" src="<%= htmlWebpackPlugin.files.chunks['components/user-card'].entry %>"></script>
+    
+    -->
+    
+
+    <!-- 
+    <script type="text/javascript" src="<%= htmlWebpackPlugin.files.chunks['components/angular-comp'].entry %>"></script>
+     -->
+    <!--
+        <script type="text/javascript" src="<%= htmlWebpackPlugin.files.chunks['components/react-comp'].entry %>"></script>
+    -->
+    
+</body>
+</html>
